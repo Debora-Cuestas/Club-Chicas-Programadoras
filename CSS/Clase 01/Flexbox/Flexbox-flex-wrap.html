@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Flex wrap</title>
+    <link rel="stylesheet" href="css/flex-wrap.css">
+</head>
+<body>
+    <h1>Flex-wrap</h1>
+    <p>
+        La distribución vertical también puede modificarse mediante saltos de línea. Si colocaramos muchos objetos en un contenedor, sencillamente se seguirían mostrando en formato horizontal, de modo que el usuario tendría que desplazarse y salir del área de la pantalla para verlos. Con flex-wrap, nos aseguramos de que los elementos se distribuyan de forma ordenada en varias líneas.
+    </p>
+    <ul>
+        <li>nowrap: sin salto de línea</li>
+        <li>wrap: salto de línea</li>
+        <li>wrap-reverse: salto de línea (ordenado a la inversa)</li>
+    </ul>
+    <!--   Comentarios de varias lineas: Ctrl + K + C -->
+    <p>
+        A primera vista, las opciones flex-start y baseline parecen ofrecer los mismos resultados, pero presentan una diferencia que se hace  evidente cuando los objetos están anidados: mientras que flex-start solo vincula dos flexboxes que están en el mismo nivel jerárquico, baseline también tiene en cuenta el contenido que hay en las cajas.
+        Con el siguiente código, se pueden centrar tres objetos de diferentes tamaños uno al lado del otro:
+    </p>
+
+    <div id="main">
+        <div style="background-color:coral;">A</div>
+        <div style="background-color:lightblue;">B</div>
+        <div style="background-color:khaki;">C</div>
+        <div style="background-color:pink;">D</div>
+        <div style="background-color:lightgrey;">E</div>
+        <div style="background-color:lightgreen;">F</div>
+      </div>
+
+</body>
+</html>

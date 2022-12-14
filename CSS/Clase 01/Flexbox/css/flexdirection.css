@@ -1,0 +1,16 @@
+.flex-container {
+    display: flex;
+    background-color: pink;
+  /* Ingresar todo luego del flex */
+    flex-direction: column-reverse;
+
+  }
+  .flex-item {
+    background-color: white;
+    width: 200px; /* Ancho */
+    margin: 10px; /* margen */
+    text-align: center;
+    line-height: 100px; /*  establece la altura de cada línea que forma el contenido de texto de un elemento https://www.w3schools.com/cssref/tryit.php?filename=trycss_line-height2 */
+    font-size: 50px; /* Tamaño de letra/fuente */
+  }
+    /* Comentarios de varias lineas: Ctrl + K + C */

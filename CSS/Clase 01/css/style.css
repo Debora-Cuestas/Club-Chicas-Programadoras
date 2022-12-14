@@ -1,0 +1,57 @@
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+ }
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@700&family=Wellfleet&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wellfleet', cursiva;
+    background-image: url("../img/gatos-mascotas-trucos_490961518_152142875_1706x960.webp");
+    background-repeat: no-repeat; /* Para no repetir la imagen en mosaico */
+    background-size: cover; /* Para que cubra toda mi pantalla/caja */
+}
+a{
+    text-decoration: none;
+   
+}
+a:hover{
+    background-color: fuchsia;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px;
+}
+a:active{
+    background-color: fuchsia;
+    font-size: 50px;
+}
+a:visited{
+    background-color: rgb(5, 5, 5);
+}
+input:focus{
+    background: rgb(36,0,18);
+    background: linear-gradient(90deg, rgba(36,0,18,1) 0%, rgba(236,14,206,0.7878787878787878) 36%, rgba(98,225,251,1) 100%); /* Gradiente https://cssgradient.io/ */
+}
+footer{
+background-color: aqua;
+}
+h1, p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-color: greenyellow;
+}
+#primerParrafo{ /* Para llamar al ID se usan # */
+    color: blue;
+    text-align: center;
+    margin: 100px;
+}
+.Iguales{ /* Para llamar al class se usan . */
+        color:green;
+        text-align: right;
+        font-weight: bold;
+}
+
+
+
+
+

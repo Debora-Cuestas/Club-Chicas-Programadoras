@@ -1,0 +1,32 @@
+Para crear una base de datos vamos a la pestana 'Nueva', ponemos el nombre que queramos, en este caso, 'Kiosko'.
+Creamos una tabla con nombre 'Productos' y 3 columnas: 
+ID tipo INT
+Nombre tipo VARCHAR (Varchar sería String en SQL. Es una cadena de carácteres) con longitud de 20 carácteres.
+Precio tipo DOUBLE (decimal)
+
+Abajo a la derecha: *Guardar*
+
+En la tabla Productos, dentro de ESTRUCTURA podemos ver lo que quedó.
+
+INSERT INTO Productos VALUES (1, "Chupetin", 6.80);
+INSERT INTO Productos VALUES (1, "Alfajor Chocolate Blanco", 12);
+INSERT INTO Productos VALUES (1, "Alfajor chocolate Blanco", 15);
+INSERT INTO Productos VALUES (1, "Caramelos", 1);
+
+SELECT* FROM Productos
+WHERE Precio < 10;  <--Traer de la tabla Productos los precios menores a 10.
+
+SELECT* FROM Productos
+WHERE Precio > 6; <--Traer de la tabla Productos los precios mayores a 10.
+
+SELECT* FROM Productos
+WHERE Precio > 6 OR precio <12;  <--Traer de la tabla Productos los precios mayores y menor a 12.
+
+
+SELECT* FROM Productos
+WHERE Precio < 10; 
+ORDER BY precio DESC <--Ordenar
+
+
+Cotejamiento: El cotejamiento o codificación de una base de datos MySQL, determina los juegos de caracteres que se utilizan en esa base de datos.
+UTF-8 es una codificación de caracteres que usa la mayoría de los sitios web. Codifica cada uno de los 1,112,064 puntos de código válidos

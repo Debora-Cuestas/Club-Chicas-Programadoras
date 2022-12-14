@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox-Align-items</title>
+    <link rel="stylesheet" href="css/align-items.css">
+</head>
+<body>
+    <h1>Align-items</h1>
+    <p>
+        La propiedad display: flex habilita la flexbox.
+        Con justify-content, los elementos se pueden distribuir con una cierta relación entre sí en el eje horizontal. En cambio, si queremos que el contenido se muestre de arriba a abajo (en el eje transversal), vamos a usar el comando <strong>align-items.</strong>
+    </p>
+    <ul>
+        <li>center: los objetos se centran.</li>
+        <li>flex-start: los objetos se ajustan al borde superior.</li>
+        <li>flex-end: los objetos se ajustan al borde inferior.</li>
+        <li>stretch: los objetos se muestran con el mismo tamaño.</li>
+        <li>baseline: los objetos se organizan en la línea de base (según el contenido).</li>
+    <!--   Comentarios de varias lineas: Ctrl + K + C -->
+    </ul>
+    <p>
+        A primera vista, las opciones flex-start y baseline parecen ofrecer los mismos resultados, pero presentan una diferencia que se hace  evidente cuando los objetos están anidados: mientras que flex-start solo vincula dos flexboxes que están en el mismo nivel jerárquico, baseline también tiene en cuenta el contenido que hay en las cajas.
+        Con el siguiente código, se pueden centrar tres objetos de diferentes tamaños uno al lado del otro:
+    </p>
+    <div class="flex-container">
+        <div class="flex-item1">Caja 1</div>
+        <div class="flex-item2">
+          <div class="flex-item3">Caja a</div>
+          <div class="flex-item3">Caja b</div>
+        </div>
+        <div class="flex-item1">Caja 2</div>
+      </div>
+</body>
+</html>

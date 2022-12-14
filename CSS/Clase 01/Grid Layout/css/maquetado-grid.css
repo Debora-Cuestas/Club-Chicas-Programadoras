@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap'); /* Importamos tipografia desde google fonts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* hace que el padding y el border pasen a formar parte del cálculo del ancho de la caja y no lo suman posteriormente. */
+}
+body{
+    font-family: Roboto; /* Aqui llamamos a la tipografia */
+    font-size: 1.3em; /* Tamaño de la fuente/letra */
+    font-weight: 300; /* Grosor de la letra. A partir de 700 es negrita */
+    width: 960px; /* Ancho */
+    margin: 32px auto; /* Espacio entre margen y la caja */
+    background-color: #202124; /* Color de fondo */
+    color: #E8EAED;/* Color de la letra */
+}
+a{
+    text-decoration:none; /* text-decoration se usa para establecer el formato de texto a subrayado https://www.w3schools.com/Css/tryit.asp?filename=trycss_text-decoration-color */
+    color: #94B4F2;  /* Color de la letra */
+}
+h1{
+    padding: 12px; /* Espacio entre la caja y el contenido dentro */
+    background-color: #3D4043;
+}
+
+#contenedor{
+    margin: 32px 0;
+    display: grid; /* El elemento se comporta como un elemento de bloque y establece su contenido de acuerdo con el modelo de cuadrícula. */
+
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(3, 1fr); /* Define el nombre de las líneas y las funciones de tamaño de línea de grid columns.  https://developer.mozilla.org/es/docs/Web/CSS/grid-template-columns*/
+    /*grid-template-rows: 250px 320px;*/
+    grid-auto-rows: minmax(180px, auto); /*  grid-auto-rows especifica el tamaño de una pista de fila de cuadrícula creada implícitamente o un patrón de pistas. https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows */
+
+    /*gap: 8px;*/
+    column-gap: 12px;
+    row-gap: 8px;
+}
+    #contenedor article{
+        padding: 16px;
+        background-color:rgb(54, 25, 138); /* Color de cada articulo */
+        border: 1px solid #0ff7ff; /* Grosor del borde (1px) y color */
+    }
+    #contenedor article:hover { /* Si me poso sobre el article cambiar los valores anteriores */
+        background-color: #e52222;
+        border: 1px solid #ea5a00;
+    }

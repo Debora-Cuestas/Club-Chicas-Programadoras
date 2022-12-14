@@ -1,0 +1,39 @@
+*{
+    margin: 0; 
+    padding:0;
+ }
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@700&family=Wellfleet&display=swap');
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Wellfleet', cursiva;
+}
+
+header{
+    background-color: rgb(255, 0, 0);
+}
+main{
+    background-color: hotpink;
+}
+/*  a{
+    text-decoration: none;
+}
+*/
+footer{
+    background-color:aqua;
+}
+h1, p{
+    font-size: 20px;
+    background-color: greenyellow;
+}
+#primerparrafo{ /* Para llamar al ID se usan # */
+    color: blue;
+    font-style: italic;
+    text-align: center;
+}
+.blue{ /* Para llamar a una clase */
+    color: purple;
+    font-style: bold;
+}
+
+
+

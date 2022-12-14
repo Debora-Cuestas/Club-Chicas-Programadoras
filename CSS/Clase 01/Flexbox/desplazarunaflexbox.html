@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desplazar una sola flexbox</title>
+    <link rel="stylesheet" href="css/desplazar una flexbox.css">
+</head>
+<body>
+    <h1>Order</h1>
+    <p>
+        Para definir excepciones se utiliza 'order'. El valor predeterminado (si el usuario no define otro) es 0. El valor añade el objeto a un grupo abstracto: todos los elementos que hemos creado hasta ahora pertenecen al mismo grupo, porque todos tienen el valor 0. Partiendo de este valor, ahora podemos mover cada objeto hacia adelante (-1) o hacia atrás (1).
+    </p>
+    <p>
+        Si dejamos todos los elementos en valor 0 excepto uno al que le damos el valor 1, este objeto se va a mostrar después del resto de elementos. El objeto también puede desplazarse asignándole otros valores (superiores o inferiores). Tengamos en cuenta que se trata de una representación puramente visual: la secuencia lógica de acuerdo con el documento HTML no cambia.
+    </p>
+
+    <div class="flex-container">
+        <div class="flex-item1">Box 1</div>
+        <div class="flex-item2">Box 2 </div>
+        <div class="flex-item1">Box 3</div>
+      </div>
+</body>
+</html>
